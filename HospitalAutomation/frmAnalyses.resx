@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dgwAppointment.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <metadata name="ResultId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ResultId.HeaderText" xml:space="preserve">
+    <value>ResultId</value>
+  </data>
+  <data name="ResultId.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="Column1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="AppointmentId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="AppointmentId.HeaderText" xml:space="preserve">
+    <value>AppointmentId</value>
+  </data>
+  <data name="AppointmentId.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="TestId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="TestId.HeaderText" xml:space="preserve">
+    <value>TestId</value>
+  </data>
+  <data name="TestId.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="TestName2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="TestName2.HeaderText" xml:space="preserve">
+    <value>Test Adı</value>
+  </data>
+  <data name="TestName2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="DoctorId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="DoctorId.HeaderText" xml:space="preserve">
+    <value>DoctorId</value>
+  </data>
+  <data name="DoctorId.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="PatientId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="PatientId.HeaderText" xml:space="preserve">
+    <value>PatientId</value>
+  </data>
+  <data name="PatientId.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="Notes.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Notes.HeaderText" xml:space="preserve">
+    <value>Notlar</value>
+  </data>
+  <data name="Notes.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="DoctorControl.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="DoctorControl.HeaderText" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="DoctorControl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="c.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="c.HeaderText" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
+  <data name="c.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="Appointment.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Appointment.HeaderText" xml:space="preserve">
+    <value>Appointment</value>
+  </data>
+  <data name="Appointment.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="Doctor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Doctor.HeaderText" xml:space="preserve">
+    <value>Doctor</value>
+  </data>
+  <data name="Doctor.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="Patient.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Patient.HeaderText" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="Patient.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="Test.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Test.HeaderText" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Test.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dgwAppointment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 45</value>
+  </data>
+  <data name="dgwAppointment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1243, 713</value>
+  </data>
+  <data name="dgwAppointment.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dgwAppointment.Name" xml:space="preserve">
+    <value>dgwAppointment</value>
+  </data>
+  <data name="&gt;&gt;dgwAppointment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgwAppointment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgwAppointment.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnMinimized.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAawSURBVHhe7d27
+        il11GMbhxBlMUpphTBpjLcbYKAiiWETiqTSFoq1Eg7cgjnoJIoplIhYewEMlatBORDtJIpFo5ekOEmF8
+        /2t9TSAMmdmr2P+9ngd+d/Cujz2nNfsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAIC5297e3kgPpZPptCR1UrtZ7XZt1DkDdpKH5Wg6mz5N/ySA3rVb9kl6JR2pcwc0eSgeS1+m
+        /xLAqrqevkiP1vmDecpDcCJ9lwDm5tt0vM4hzENGv57eSu3TMMBcXUtbaa3OI6yuDH0zfZ8AGF1IfmGQ
+        1ZWB350utbUDcIOL6VidS1gdGXb7yv9yWzkAN3UlHa2zCf3LoA+ln9u6AdjRj+lgnU/oW8b8/jBrAG7F
+        O3U+oV8Z8tPjngHYhVN1RqE/GXD71v9vw5QB2I1f04E6p9CXjPfVYcYA7MWZOqfQjwy3veznj2HCAOzF
+        1bReZxX6kNE+M8wXgEU8UWcV+pDRfjhuF4AFnK+zCssvg70t/TtMF4BFtH8nvL/OKyy3jPX+YbYATOG+
+        Oq+w3DLWF8fNAjCB5+u8wnLLWN8cNwvABLbqvMJyy1jfHTcLwAS8Gpg+ZKznx80CMIFzdV5huWWsPgAA
+        TMcHAPqQsfoRAMB0/AiAPmSsb4ybBWACr9d5heWWsb4wbhaACTxX5xWWW8Z6YtwsABM4XucVllvGuj95
+        FTDA4v5OXgVMPzLYD4bpArAIfwFAXzLap8btArCAU3VWoQ8Z7Xr6fZgvAHtxNa3VWYV+ZLhnhwkDsBcv
+        1TmFvmS8B9OVYcYA7MbldHudU+hPBvzkMGUAduPxOqPQrwz5vXHPANyCt+t8Qt8y5kPpp2HWAOzkh3Sg
+        zif0L4PeTJfaugG4qfY7U0fqbMLqyLCPpYtt5QDc4Jd0V51LWD0Z+Ea60NYOwODrdLjOJKyuDH0tbaVr
+        CWCu2g18LXnZD/OS0d+bvkkAc/NVuqfOIcxTHoJH0ufpegJYVe0r/s/Sw3X+gCYPxZ3p5fRx+isB9O7P
+        9FE6kzbr3AE7ycNyOD2YTqZn02lJWvLarWo364F0R50zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAABgpvbt+x9m7EUcJ+duwQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnMinimized.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnMinimized.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btnMinimized.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnMinimized.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1197, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnMinimized.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnMinimized.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 30</value>
+  </data>
+  <data name="btnMinimized.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnMinimized.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnMinimized.Name" xml:space="preserve">
+    <value>btnMinimized</value>
+  </data>
+  <data name="&gt;&gt;btnMinimized.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMinimized.Parent" xml:space="preserve">
+    <value>pnlLayout</value>
+  </data>
+  <data name="&gt;&gt;btnMinimized.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnExit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        gg==
+</value>
+  </data>
+  <data name="btnExit.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnExit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btnExit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1232, 0</value>
+  </data>
+  <data name="btnExit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 30</value>
+  </data>
+  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
+    <value>btnExit</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
+    <value>pnlLayout</value>
+  </data>
+  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlLayout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pnlLayout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlLayout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="pnlLayout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1267, 30</value>
+  </data>
+  <data name="pnlLayout.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.Name" xml:space="preserve">
+    <value>pnlLayout</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1267, 770</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frmAnalyses</value>
+  </data>
+  <data name="&gt;&gt;ResultId.Name" xml:space="preserve">
+    <value>ResultId</value>
+  </data>
+  <data name="&gt;&gt;ResultId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AppointmentId.Name" xml:space="preserve">
+    <value>AppointmentId</value>
+  </data>
+  <data name="&gt;&gt;AppointmentId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TestId.Name" xml:space="preserve">
+    <value>TestId</value>
+  </data>
+  <data name="&gt;&gt;TestId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TestName2.Name" xml:space="preserve">
+    <value>TestName2</value>
+  </data>
+  <data name="&gt;&gt;TestName2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DoctorId.Name" xml:space="preserve">
+    <value>DoctorId</value>
+  </data>
+  <data name="&gt;&gt;DoctorId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PatientId.Name" xml:space="preserve">
+    <value>PatientId</value>
+  </data>
+  <data name="&gt;&gt;PatientId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Notes.Name" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="&gt;&gt;Notes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DoctorControl.Name" xml:space="preserve">
+    <value>DoctorControl</value>
+  </data>
+  <data name="&gt;&gt;DoctorControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;c.Name" xml:space="preserve">
+    <value>c</value>
+  </data>
+  <data name="&gt;&gt;c.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Appointment.Name" xml:space="preserve">
+    <value>Appointment</value>
+  </data>
+  <data name="&gt;&gt;Appointment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Doctor.Name" xml:space="preserve">
+    <value>Doctor</value>
+  </data>
+  <data name="&gt;&gt;Doctor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Patient.Name" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="&gt;&gt;Patient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Test.Name" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;Test.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmAnalyses</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
