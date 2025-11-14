@@ -1,0 +1,155 @@
+@model LoginRegisterViewModel
+@{
+    ViewData["Title"] = "Giriş veya Kayıt";
+    var successMessage = TempData["RegisterSuccess"] as string;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/account.css" />
+}
+
+<div class="account-wrapper @(Model.ActivePanel == "register" ? "show-register" : string.Empty)" data-account-wrapper>
+    <input type="hidden" data-active-panel value="@Model.ActivePanel" />
+
+    <section class="forms-container">
+        <div class="form-card">
+            <h2>Hesabınıza Giriş Yapın</h2>
+            <p class="description">Randevularınızı takip etmek ve sonuçlarınızı görüntülemek için giriş yapın.</p>
+
+            @if (!string.IsNullOrEmpty(successMessage))
+            {
+                <div class="validation-summary-errors" role="alert">
+                    <ul>
+                        <li>@successMessage</li>
+                    </ul>
+                </div>
+            }
+
+            <form asp-action="Login" method="post" novalidate>
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="ReturnUrl" value="@Model.Login.ReturnUrl" />
+
+                <div asp-validation-summary="ModelOnly" class="validation-summary-errors"></div>
+
+                <div class="form-group">
+                    <label asp-for="Login.IdentityNumber"></label>
+                    <input asp-for="Login.IdentityNumber" autocomplete="username" />
+                    <span asp-validation-for="Login.IdentityNumber"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Login.Password"></label>
+                    <input asp-for="Login.Password" type="password" autocomplete="current-password" />
+                    <span asp-validation-for="Login.Password"></span>
+                </div>
+
+                <button class="action-button" type="submit">Giriş Yap</button>
+            </form>
+        </div>
+
+        <div class="form-card">
+            <h2>Henüz hesabınız yok mu?</h2>
+            <p class="description">Dakikalar içinde kayıt olun, online randevu oluşturun ve tedavi sürecinizi kolayca yönetin.</p>
+            <button class="toggle-button" data-open-register>Kayıt Ol</button>
+        </div>
+    </section>
+
+    <section class="info-container">
+        <div class="info-card">
+            <h3>Han Hospital</h3>
+            <p>
+                Gelişmiş güvenlik kontrolleri, şifreli veri saklama ve detaylı log takibi ile hasta ve doktor deneyimini güvenle web'e taşıyoruz.
+            </p>
+            <ul>
+                <li>Kimlik, e-posta ve telefon doğrulama adımları</li>
+                <li>Şifreler ve kişisel veriler AES ile şifrelenir</li>
+                <li>Rol bazlı erişim kontrolleri ve oturum yönetimi</li>
+            </ul>
+            <button class="toggle-button" data-open-login>Girişe Dön</button>
+        </div>
+
+        <div class="form-card">
+            <h2>Yeni Hesap Oluşturun</h2>
+            <p class="description">Hastane hizmetlerinden yararlanmak için aşağıdaki formu doldurun.</p>
+
+            <form asp-action="Register" method="post" novalidate>
+                @Html.AntiForgeryToken()
+
+                <div asp-validation-summary="ModelOnly" class="validation-summary-errors"></div>
+
+                <div class="form-group">
+                    <label asp-for="Register.FirstName"></label>
+                    <input asp-for="Register.FirstName" autocomplete="given-name" />
+                    <span asp-validation-for="Register.FirstName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Register.LastName"></label>
+                    <input asp-for="Register.LastName" autocomplete="family-name" />
+                    <span asp-validation-for="Register.LastName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Register.IdentityNumber"></label>
+                    <input asp-for="Register.IdentityNumber" autocomplete="off" />
+                    <span asp-validation-for="Register.IdentityNumber"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Register.DateOfBirth"></label>
+                    <input asp-for="Register.DateOfBirth" type="date" />
+                    <span asp-validation-for="Register.DateOfBirth"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Register.Gender"></label>
+                    <select asp-for="Register.Gender">
+                        <option value="">Cinsiyet seçiniz</option>
+                        <option value="true">Erkek</option>
+                        <option value="false">Kadın</option>
+                    </select>
+                    <span asp-validation-for="Register.Gender"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Register.BloodGroupId"></label>
+                    <select asp-for="Register.BloodGroupId" asp-items="Model.BloodGroups">
+                        <option value="">Kan grubu seçiniz</option>
+                    </select>
+                    <span asp-validation-for="Register.BloodGroupId"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Register.Email"></label>
+                    <input asp-for="Register.Email" autocomplete="email" />
+                    <span asp-validation-for="Register.Email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Register.PhoneNumber"></label>
+                    <input asp-for="Register.PhoneNumber" autocomplete="tel" />
+                    <span asp-validation-for="Register.PhoneNumber"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Register.Password"></label>
+                    <input asp-for="Register.Password" type="password" autocomplete="new-password" />
+                    <span asp-validation-for="Register.Password"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Register.ConfirmPassword"></label>
+                    <input asp-for="Register.ConfirmPassword" type="password" autocomplete="new-password" />
+                    <span asp-validation-for="Register.ConfirmPassword"></span>
+                </div>
+
+                <button class="action-button" type="submit">Kayıt Ol</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/account.js"></script>
+}

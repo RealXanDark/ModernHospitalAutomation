@@ -1,0 +1,162 @@
+.account-wrapper {
+    width: min(980px, 100%);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.25);
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    transition: transform 0.5s ease;
+}
+
+.account-wrapper.show-register .forms-container {
+    transform: translateX(-50%);
+}
+
+.account-wrapper.show-register .info-container {
+    transform: translateX(-50%);
+}
+
+.forms-container,
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    transition: transform 0.6s ease;
+}
+
+.form-card {
+    padding: 3rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.1rem;
+    min-height: 520px;
+}
+
+.form-card h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--han-dark);
+    text-align: center;
+}
+
+.form-card p.description {
+    color: #475569;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #1f2937;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+    border: 1px solid rgba(30, 60, 114, 0.2);
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--han-accent);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(88, 169, 255, 0.2);
+}
+
+.toggle-button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    color: white;
+    padding: 0.85rem 1.8rem;
+    font-weight: 500;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.toggle-button:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.info-card {
+    padding: 3rem 3.5rem;
+    background: linear-gradient(160deg, rgba(30, 60, 114, 0.96), rgba(88, 169, 255, 0.88));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    min-height: 520px;
+}
+
+.info-card h3 {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.info-card p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.8rem;
+}
+
+.info-card li {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 0.95rem;
+}
+
+.info-card li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 992px) {
+    .account-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .forms-container,
+    .info-container {
+        grid-template-columns: 1fr;
+        transform: none !important;
+    }
+
+    .info-card {
+        order: -1;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+}
+
+@media (max-width: 600px) {
+    .form-card,
+    .info-card {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .form-card h2 {
+        font-size: 1.7rem;
+    }
+}
